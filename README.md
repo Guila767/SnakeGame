@@ -1,2 +1,2 @@
 # SnakeGame
-Snake Game Made in C#
+Snake Game write in C# using only the Console Application.
