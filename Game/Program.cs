@@ -94,7 +94,7 @@ namespace SnakeGame
                         }
                         break;
                     default:
-                        throw new Exception("The game support only the initial direction as Right");
+                        throw new Exception("The game only support the initial direction as Right");
                 }
             }
         }
