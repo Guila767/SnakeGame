@@ -128,8 +128,8 @@ namespace WinApiConsole
         public const uint FILE_SHARE_WRITE = 0x00000002;
 
         public const uint GENERIC_READ = 0x80000000;
-		public const uint GENERIC_WRITE = 0x40000000;
-		public const int CONSOLE_TEXTMODE_BUFFER = 1;
+	public const uint GENERIC_WRITE = 0x40000000;
+	public const int CONSOLE_TEXTMODE_BUFFER = 1;
 
         public static class WINCON
         {
@@ -247,12 +247,6 @@ namespace WinApiConsole
         [DllImport("Kernel32.dll")]
         public static extern bool SetConsoleTextAttribute(IntPtr hConsole, ushort wAttributes);
         
-        [DllImport("msvcrt.Dll", CallingConvention = CallingConvention.Cdecl)]
-        public static extern int sprintf(
-            [In, Out]StringBuilder buffer, 
-            String fmt,
-            String arg1);
-
         public static char[] WriteText(char[] buffer, int Pos, string Text)
         {
             if (Pos > buffer.Length || Pos < 0)
